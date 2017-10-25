@@ -3,10 +3,11 @@ require "pry"
 class Hash
   def keys_of(*arguments)
     match = []
-    keys = self.values
-    keys.each do |x|
+    values = self.values
+    keys = self.keys
+    values.each_with_index do |x, i|
       if arguments.include?(x)
-        match << x
+        match << keys[i-1]
       end
     end
     return match
