@@ -1,5 +1,5 @@
 class Hash
-  def keys_of_hash(*arguments)
+  def keys_of(*arguments)
     keys = Hash.keys
     args = arguments.collect {|x| x}
     both = []
@@ -9,4 +9,5 @@ class Hash
       end
     end
   end
+  return both
 end
