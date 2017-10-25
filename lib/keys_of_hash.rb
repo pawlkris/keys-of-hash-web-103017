@@ -7,7 +7,7 @@ class Hash
     keys = self.keys
     values.each_with_index do |x, i|
       if arguments.include?(x)
-        match << keys[i-1]
+        match << keys[i]
       end
     end
     return match
