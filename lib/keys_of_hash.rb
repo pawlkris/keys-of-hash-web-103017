@@ -1,10 +1,12 @@
 class Hash
   def keys_of(*arguments)
     match = []
-    return (keys.each do |x|
+    keys = self.keys
+    keys.each do |x|
       if arguments.include?(x)
         match << x
       end
-    end)
+    end
+    return match
   end
 end
