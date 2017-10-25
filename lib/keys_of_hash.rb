@@ -7,6 +7,7 @@ class Hash
         match << x
       end
     end
+    binding.pry
     return match
   end
 end
