@@ -1,9 +1,9 @@
 class Hash
   def keys_of(*arguments)
-    keys = self.keys
+    match = []
     return (keys.each do |x|
       if arguments.include?(x)
-        x
+        match << x
       end
     end)
   end
