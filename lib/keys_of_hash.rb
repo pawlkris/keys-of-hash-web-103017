@@ -7,4 +7,5 @@ class Hash
         x
       end
     end)
+  end
 end
